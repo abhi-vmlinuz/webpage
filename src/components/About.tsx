@@ -70,7 +70,7 @@ const About = () => {
           duration: 0.6,
           delay: 0.3
         }} className="glass p-6 rounded-2xl font-mono text-sm w-full max-w-full">
-          <div className="flex items-center gap-2 mb-4 pb-4 border-b border-border">\n              <div className="w-3 h-3 rounded-full bg-destructive/80" />\n              <div className="w-3 h-3 rounded-full bg-accent/80" />\n              <div className="w-3 h-3 rounded-full bg-primary/80" />\n              <span className="ml-2 text-muted-foreground text-xs">~/abhishek</span>
+          <div className="flex items-center gap-2 mb-4 pb-4 border-b border-border">​              <div className="w-3 h-3 rounded-full bg-destructive/80" />​              <div className="w-3 h-3 rounded-full bg-accent/80" />​              <div className="w-3 h-3 rounded-full bg-primary/80" />​              <span className="ml-2 text-muted-foreground text-xs">~/abhishek</span>
           </div>
           <div className="space-y-2 text-muted-foreground overflow-x-auto">
             <p><span className="text-primary">$</span> whoami</p>
