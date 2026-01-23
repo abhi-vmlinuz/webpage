@@ -1,32 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Shield, Terminal, Cloud, Lock, Server, Code } from "lucide-react";
-const skills = [{
-  icon: Shield,
-  label: "Security Engineering",
-  description: "Penetration testing, vulnerability assessment, secure architecture"
-}, {
-  icon: Terminal,
-  label: "Linux & Automation",
-  description: "Shell scripting, Ansible, system administration"
-}, {
-  icon: Cloud,
-  label: "Cloud & DevOps",
-  description: "AWS, Docker, Kubernetes, CI/CD pipelines"
-}, {
-  icon: Lock,
-  label: "DevSecOps",
-  description: "Security-first development, SAST/DAST, compliance"
-}, {
-  icon: Server,
-  label: "Infrastructure",
-  description: "Terraform, platform engineering, monitoring"
-}, {
-  icon: Code,
-  label: "Backend Systems",
-  description: "Python, Go, APIs, microservices"
-}];
+import TechStack from "./TechStack";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -113,23 +88,8 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* Skills grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skills.map((skill, index) => <motion.div key={skill.label} initial={{
-          opacity: 0,
-          y: 20
-        }} animate={isInView ? {
-          opacity: 1,
-          y: 0
-        } : {}} transition={{
-          duration: 0.5,
-          delay: 0.4 + index * 0.1
-        }} className="group p-6 rounded-xl bg-card border border-border card-hover">
-              <skill.icon className="w-8 h-8 text-primary mb-4 group-hover:text-accent transition-colors duration-300" />
-              <h3 className="font-semibold text-lg mb-2">{skill.label}</h3>
-              <p className="text-muted-foreground text-sm">{skill.description}</p>
-            </motion.div>)}
-        </div>
+        {/* Tech Stack Carousel */}
+        <TechStack />
       </div>
     </section>;
 };
