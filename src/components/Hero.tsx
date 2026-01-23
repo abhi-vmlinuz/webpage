@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="min-h-screen relative overflow-hidden flex items-center">
       {/* Content Container - Matching About section structure exactly */}
       <div className="section-container">
-        <div className="space-y-6 md:space-y-8 text-center md:text-left">
+        <div className="space-y-6 md:space-y-8">
           {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 pt-4 md:pt-6 justify-center md:justify-start"
+            className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 pt-4 md:pt-6"
           >
             <ShinyButton href="#contact">
               Get in touch
