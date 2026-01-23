@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  return <section className="min-h-screen relative overflow-hidden items-center justify-center flex flex-row">
+  return <section className="min-h-screen relative overflow-hidden">
       {/* Sleek dark gradient background */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-background via-background to-card/30" />
       
@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="section-container relative z-10">
+      <div className="section-container relative z-10 w-full">
         <div className="max-w-3xl">
           {/* Greeting */}
           <motion.p initial={{
