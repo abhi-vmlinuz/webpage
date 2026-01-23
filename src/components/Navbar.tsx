@@ -11,7 +11,7 @@ const navItems = [{
   href: "#contact"
 }];
 const Navbar = () => {
-  const resumeUrl = "https://drive.google.com/file/d/YOUR_RESUME_ID/view"; // Replace with actual resume URL
+  const resumeUrl = "https://drive.google.com/file/d/1tygIDV8EuQhphBpx_9j-RRVROafs4MZk/view?usp=sharing";
 
   return (
     <div className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] md:w-auto max-w-2xl">
