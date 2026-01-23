@@ -15,7 +15,7 @@ const Hero = () => {
       backgroundSize: '50px 50px'
     }} />
 
-      <div className="section-container relative z-10 text-center flex-col flex items-start justify-center">
+      <div className="section-container relative z-10 text-center flex-row flex items-center justify-start">
         <div className="max-w-3xl">
           {/* Greeting */}
           <motion.p initial={{
