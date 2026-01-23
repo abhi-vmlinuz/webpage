@@ -109,7 +109,7 @@ const TechStack = () => {
           <div className="flex animate-scroll-left">
             {[...techStacks, ...techStacks].map((tech, index) => <div key={`${tech.name}-${index}`} className="flex-shrink-0 mx-4 group">
                 <div className="w-20 h-20 rounded-xl bg-card border border-border flex items-center justify-center p-4 transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
-                  <img src={tech.icon} alt={tech.name} className="w-10 h-10 object-contain filter brightness-0 invert transition-opacity duration-300 opacity-100" />
+                  <img src={tech.icon} alt={tech.name} className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
                 </div>
                 <p className="text-xs text-muted-foreground text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {tech.name}
