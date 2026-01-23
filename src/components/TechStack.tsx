@@ -9,7 +9,7 @@ const techStacks = [{
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 }, {
   name: "C",
-  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+  icon: "https://cdn.simpleicons.org/c/A8B9CC"
 }, {
   name: "C++",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
@@ -36,7 +36,7 @@ const techStacks = [{
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
 }, {
   name: "GitHub",
-  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+  icon: "https://cdn.simpleicons.org/github/white"
 }, {
   name: "REST APIs",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"

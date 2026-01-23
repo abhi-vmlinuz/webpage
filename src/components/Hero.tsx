@@ -1,19 +1,15 @@
 import { motion } from "framer-motion";
-import { Server } from "lucide-react";
-const Hero = () => {
-  return <section className="min-h-screen relative overflow-hidden items-center justify-start flex flex-row">
-      {/* Background gradient effects */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
-      </div>
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.02]" style={{
-      backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-                           linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-      backgroundSize: '50px 50px'
-    }} />
+const Hero = () => {
+  return <section className="min-h-screen relative overflow-hidden items-center justify-center flex flex-row">
+      {/* Sleek dark gradient background */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-background via-background to-card/30" />
+      
+      {/* Subtle ambient glow effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[150px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[120px]" />
+      </div>
 
       <div className="section-container relative z-10">
         <div className="max-w-3xl">
