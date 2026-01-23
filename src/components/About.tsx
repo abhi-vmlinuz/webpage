@@ -80,9 +80,9 @@ const About = () => {
               <p><span className="text-primary">$</span> whoami</p>
               <p className="text-foreground pl-4">security-engineer && platform-builder</p>
               <p><span className="text-primary">$</span> cat interests.txt</p>
-              <p className="text-foreground pl-4">CTF | DevSecOps | Cloud Security | Automation</p>
+              <p className="text-foreground pl-4">Cybersecurity, DevSecOps, Cloud Security, Automation</p>
               <p><span className="text-primary">$</span> ls -la skills/</p>
-              <p className="text-foreground pl-4">linux/ docker/ kubernetes/ terraform/ python/</p>
+              <p className="text-foreground pl-4">linux/ docker/ kubernetes/ git/ python/</p>
               <p><span className="text-primary">$</span> <span className="animate-pulse">_</span></p>
             </div>
           </motion.div>
