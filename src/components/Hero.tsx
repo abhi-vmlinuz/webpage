@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Server } from "lucide-react";
 const Hero = () => {
-  return <section className="min-h-screen relative overflow-hidden items-center justify-start flex flex-row">
+  return <section className="min-h-screen relative overflow-hidden items-center justify-center flex flex-row">
       {/* Background gradient effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -15,7 +15,7 @@ const Hero = () => {
       backgroundSize: '50px 50px'
     }} />
 
-      <div className="section-container relative z-10 mx-[80px]">
+      <div className="section-container relative z-10 text-center flex flex-col items-center">
         <div className="max-w-3xl">
           {/* Greeting */}
           <motion.p initial={{
