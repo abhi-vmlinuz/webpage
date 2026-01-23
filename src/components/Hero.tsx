@@ -71,7 +71,7 @@ const Hero = () => {
               Get in touch
             </ShinyButton>
 
-            <a href="#projects" className="px-8 md:px-10 py-4 md:py-5 border-2 border-muted-foreground/20 text-foreground rounded-full font-medium hover:border-muted-foreground/40 hover:bg-muted/5 transition-all duration-300 text-base md:text-lg text-center">
+            <a href="#projects" className="px-6 py-3.5 border-2 border-muted-foreground/20 text-foreground rounded-full font-medium hover:border-muted-foreground/40 hover:bg-muted/5 transition-all duration-300 text-sm text-center">
               View work
             </a>
           </motion.div>
