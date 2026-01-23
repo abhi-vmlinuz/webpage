@@ -59,7 +59,7 @@ const Hero = () => {
           duration: 0.5,
           delay: 0.4
         }} className="text-xl md:text-2xl text-secondary-foreground leading-relaxed max-w-2xl">
-            A <span className="highlight-accent">security-focused platform engineer</span> with 
+            A <span className="highlight-accent text-[#d72323]">security-focused platform engineer</span> with 
             a DevSecOps mindset, passionate about building robust infrastructure, 
             automating everything, and crafting <span className="highlight-primary text-gray-300">real systems that matter</span>.
           </motion.p>
