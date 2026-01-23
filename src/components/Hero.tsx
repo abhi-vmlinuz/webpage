@@ -59,7 +59,7 @@ const Hero = () => {
           duration: 0.5,
           delay: 0.4
         }} className="text-xl md:text-2xl leading-relaxed max-w-2xl font-thin text-destructive-foreground">
-            A <span className="highlight-accent font-extrabold text-primary-foreground bg-popover">Cybersecurity Student </span> with 
+            A <span className="highlight-accent font-extrabold bg-popover text-destructive">Cybersecurity Student </span> with 
             a DevSecOps mindset, passionate about building robust infrastructure, 
             automating everything, and crafting <span className="highlight-primary text-slate-50">real systems that matter</span>.
           </motion.p>
