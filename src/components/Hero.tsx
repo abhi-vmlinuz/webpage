@@ -15,7 +15,7 @@ const Hero = () => {
       backgroundSize: '50px 50px'
     }} />
 
-      <div className="section-container relative z-10">
+      <div className="section-container relative z-10 mx-[80px]">
         <div className="max-w-3xl">
           {/* Greeting */}
           <motion.p initial={{
@@ -43,7 +43,7 @@ const Hero = () => {
           delay: 0.3
         }} className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
             I'm{" "}
-            <span className="text-gradient-primary">
+            <span className="text-gradient-primary text-destructive-foreground">
               Abhishek Vincent
             </span>
           </motion.h1>
@@ -77,8 +77,8 @@ const Hero = () => {
           delay: 1
         }} className="absolute bottom-12 left-6">
             <div className="flex flex-col items-center gap-2 text-muted-foreground">
-              <span className="text-sm font-medium tracking-wider uppercase">Scroll</span>
-              <div className="w-px h-12 bg-gradient-to-b from-muted-foreground to-transparent" />
+              
+              
             </div>
           </motion.div>
         </div>
