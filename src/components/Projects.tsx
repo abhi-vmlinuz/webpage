@@ -52,14 +52,14 @@ const Projects = () => {
         y: 0
       } : {}} transition={{
         duration: 0.6
-      }}>
+      }} className="text-center">
           <span className="text-sm font-semibold tracking-wider uppercase mb-4 block text-destructive">
             Projects
           </span>
           <h2 className="section-heading">
             Things I've Built
           </h2>
-          <p className="section-subheading mb-16">
+          <p className="section-subheading mb-16 mx-auto">
             From CTF infrastructure to security automation — projects that solve real problems 
             and push the boundaries of what's possible.
           </p>
