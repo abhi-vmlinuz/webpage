@@ -1,17 +1,25 @@
 import { motion } from "framer-motion";
+import ColorBends from "./effects/ColorBends";
 
 const Hero = () => {
-  return <section className="min-h-screen relative overflow-hidden">
-      {/* Sleek dark gradient background */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-background via-background to-card/30" />
-      
-      {/* Subtle ambient glow effects */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[150px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[120px]" />
-      </div>
+  return (
+    <section id="hero" className="relative min-h-screen">
+      {/* ColorBends background - no mouse influence since we have cursor effect */}
+      <ColorBends
+        rotation={45}
+        speed={0.1}
+        colors={["#0a0a0f", "#1a1a2e", "#16213e"]}
+        transparent
+        autoRotate={0}
+        scale={1.1}
+        frequency={1}
+        warpStrength={1}
+        mouseInfluence={0}
+        parallax={0.6}
+        noise={0.15}
+      />
 
-      <div className="section-container relative z-10 w-full">
+      <div className="section-container relative z-10">
         <div className="max-w-3xl">
           {/* Greeting */}
           <motion.p initial={{
@@ -79,6 +87,8 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
