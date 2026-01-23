@@ -15,12 +15,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <SplashCursor
-        SIM_RESOLUTION={224}
-        DYE_RESOLUTION={1664}
-        DENSITY_DISSIPATION={6.5}
-        VELOCITY_DISSIPATION={1.5}
-        PRESSURE={0}
-        CURL={4}
         SPLAT_RADIUS={0.2}
         SPLAT_FORCE={3000}
         COLOR_UPDATE_SPEED={10}
