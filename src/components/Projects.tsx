@@ -65,51 +65,68 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Projects grid */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {projects.map((project, index) => <motion.article key={project.title} initial={{
-          opacity: 0,
-          y: 30
-        }} animate={isInView ? {
-          opacity: 1,
-          y: 0
-        } : {}} transition={{
-          duration: 0.5,
-          delay: 0.2 + index * 0.1
-        }} className="group relative p-8 rounded-2xl bg-card border border-border card-hover overflow-hidden">
-              {/* Hover gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="relative z-10">
-                {/* Header */}
-                <div className="flex items-start justify-between mb-4">
-                  
-                  <div className="flex items-center gap-3">
-                    {project.github && <a href={project.github} className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200" aria-label="View on GitHub">
-                        <Github className="w-5 h-5" />
-                      </a>}
-                    {project.live && <a href={project.live} className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary transition-all duration-200" aria-label="View live project">
-                        <ExternalLink className="w-5 h-5" />
-                      </a>}
-                  </div>
+        {/* Projects list */}
+        <div className="border-t border-border">
+          {projects.map((project, index) => (
+            <motion.article 
+              key={project.title} 
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.4, delay: 0.1 + index * 0.08 }}
+              className="group border-b border-border"
+            >
+              <div className="py-8 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+                {/* Project number */}
+                <span className="text-sm font-mono text-muted-foreground md:w-12 shrink-0">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                
+                {/* Title & Description */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 group-hover:text-primary transition-colors duration-200">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed line-clamp-2">
+                    {project.description}
+                  </p>
                 </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {project.description}
-                </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map(tag => <span key={tag} className="px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground border border-border">
+                <div className="flex flex-wrap gap-2 md:w-64 shrink-0">
+                  {project.tags.slice(0, 3).map(tag => (
+                    <span 
+                      key={tag} 
+                      className="px-2 py-0.5 text-xs font-mono text-muted-foreground"
+                    >
                       {tag}
-                    </span>)}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex items-center gap-2 shrink-0">
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      className="p-2 text-muted-foreground hover:text-foreground transition-colors duration-200" 
+                      aria-label="View on GitHub"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a 
+                      href={project.live} 
+                      className="p-2 text-muted-foreground hover:text-primary transition-colors duration-200" 
+                      aria-label="View live project"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
               </div>
-            </motion.article>)}
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>;
