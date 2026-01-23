@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import cLogo from "@/assets/c-logo.png";
 const techStacks = [{
   name: "Bash/Shell",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
@@ -9,7 +10,7 @@ const techStacks = [{
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 }, {
   name: "C",
-  icon: "https://cdn.simpleicons.org/c/A8B9CC"
+  icon: cLogo
 }, {
   name: "C++",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
