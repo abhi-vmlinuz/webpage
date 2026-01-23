@@ -27,7 +27,7 @@ const Hero = () => {
         }} transition={{
           duration: 0.5,
           delay: 0.2
-        }} className="text-muted-foreground text-lg mb-4 font-medium">
+        }} className="mb-4 font-medium text-2xl text-destructive-foreground">
             Hi,
           </motion.p>
 
@@ -58,10 +58,10 @@ const Hero = () => {
         }} transition={{
           duration: 0.5,
           delay: 0.4
-        }} className="text-xl md:text-2xl text-secondary-foreground leading-relaxed max-w-2xl">
-            A <span className="highlight-accent text-[#d72323]">security-focused platform engineer</span> with 
+        }} className="text-xl md:text-2xl leading-relaxed max-w-2xl font-thin text-destructive-foreground">
+            A <span className="highlight-accent font-extrabold text-primary-foreground bg-popover">Cybersecurity Student </span> with 
             a DevSecOps mindset, passionate about building robust infrastructure, 
-            automating everything, and crafting <span className="highlight-primary text-gray-300">real systems that matter</span>.
+            automating everything, and crafting <span className="highlight-primary text-slate-50">real systems that matter</span>.
           </motion.p>
 
           {/* Floating icons */}
