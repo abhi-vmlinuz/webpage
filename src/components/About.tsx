@@ -18,7 +18,7 @@ const About = () => {
         y: 0
       } : {}} transition={{
         duration: 0.6
-      }}>
+      }} className="text-center">
         <span className="text-sm font-semibold tracking-wider uppercase mb-4 block text-destructive">
           About Me
         </span>
