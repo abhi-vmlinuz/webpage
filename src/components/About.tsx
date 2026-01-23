@@ -25,7 +25,7 @@ const About = () => {
         <h2 className="section-heading">
           Building Secure Systems
         </h2>
-        <p className="section-subheading mb-16">
+        <p className="section-subheading mb-16 mx-auto">
           I thrive at the intersection of security and infrastructure — designing systems
           that are not just functional, but resilient, scalable, and hardened against real-world threats.
         </p>
