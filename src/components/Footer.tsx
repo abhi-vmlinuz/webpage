@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="border-t border-border">
@@ -34,7 +33,9 @@ const Footer = () => {
       }} className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border/50">
           {/* Logo / Name */}
           <div className="flex items-center gap-2 text-muted-foreground">
-            <span className="font-bold" style={{ fontFamily: "'Google Sans', sans-serif" }}>Abhishek</span>
+            <span className="font-bold" style={{
+            fontFamily: "'Google Sans', sans-serif"
+          }}>Abhishek Vincent    </span>
           </div>
 
           {/* Copyright */}
