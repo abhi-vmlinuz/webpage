@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Server, Shield, Terminal, Wrench } from "lucide-react";
+import { Bug, ExternalLink, Github, Image, Search, Server, Shield, Terminal, Wrench } from "lucide-react";
 const projects = [{
   title: "Nexus Engine",
   description: "A high-performance CTF platform built for hosting capture-the-flag competitions. Features dynamic flag generation, real-time scoreboards, and containerized challenge deployment.",
@@ -10,26 +10,26 @@ const projects = [{
   github: "#",
   live: "#"
 }, {
-  title: "SecurePipe",
-  description: "CI/CD security pipeline framework that integrates SAST, DAST, and container scanning into existing workflows. Built for DevSecOps teams.",
+  title: "Aider",
+  description: "Cross-platform security audit and system inspection tool that automates detection of misconfigurations, weak permissions, and common vulnerability patterns across Linux and macOS environments. Designed to assist blue teams and CTF players with rapid system triage.",
   tags: ["Go", "GitHub Actions", "Docker", "Trivy"],
   icon: Shield,
-  github: "#",
+  github: "https://github.com/Abhizzz123/Aider.git",
   live: null
 }, {
-  title: "InfraBot",
-  description: "Automated infrastructure provisioning and security hardening toolkit. Terraform modules with built-in CIS benchmarks and compliance checks.",
-  tags: ["Terraform", "Ansible", "AWS", "Python"],
-  icon: Terminal,
-  github: "#",
+  title: "PixelVeil",
+  description: "Steganography and forensic analysis toolkit for CTFs and security research. Supports detection and extraction of hidden data from images using LSB techniques, file carving, and entropy-based inspection.",
+  tags: ["Python", "Steganography", "Digital Forensics", "CTF", "Binwalk"],
+  icon: Image,
+  github: "https://github.com/Abhizzz123/Pixel-Veil",
   live: null
 }, {
-  title: "VulnLab",
-  description: "Personal vulnerable lab environment for security research and training. Self-hosted vulnerable applications with guided exploitation paths.",
-  tags: ["Docker", "Vagrant", "Linux", "Networking"],
-  icon: Wrench,
+  title: "PyBackURLs",
+  description: "OSINT automation framework that aggregates historical URLs from Wayback Machine, Common Crawl, and VirusTotal to accelerate reconnaissance and attack-surface discovery workflows.",
+  tags: ["Python", "OSINT", "Automation", "Recon", "APIs"],
+  icon: Search,
   github: "#",
-  live: "#"
+  live: null
 }];
 const Projects = () => {
   const ref = useRef(null);
