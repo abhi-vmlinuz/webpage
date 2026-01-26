@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {currentYear} — Designed & built with security in mind
+            © {currentYear} — All rights reserved
           </p>
 
           {/* Back to top */}
