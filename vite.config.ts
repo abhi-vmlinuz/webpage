@@ -3,8 +3,12 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
+// CHANGE THIS to your repo name
+const repoName = "abhishek-vincent-cyberops-portfolio";
+
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? `/${repoName}/` : "/",
+
   server: {
     host: "::",
     port: 8080,
@@ -12,7 +16,9 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
