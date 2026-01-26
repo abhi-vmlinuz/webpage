@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import abhishekLogo from "@/assets/abhishek-logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="border-t border-border">
@@ -34,7 +34,7 @@ const Footer = () => {
       }} className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border/50">
           {/* Logo / Name */}
           <div className="flex items-center gap-2 text-muted-foreground">
-            <img src={abhishekLogo} alt="Abhishek" className="h-5 w-auto" />
+            <span className="font-bold" style={{ fontFamily: "'Google Sans', sans-serif" }}>Abhishek</span>
           </div>
 
           {/* Copyright */}
