@@ -5,14 +5,14 @@ import { Bug, ExternalLink, Github, Image, Search, Server, Shield, Terminal, Wre
 const projects = [{
   title: "Nexus Engine",
   description: "A high-performance CTF platform built for hosting capture-the-flag competitions. Features dynamic flag generation, real-time scoreboards, and containerized challenge deployment.",
-  tags: ["Python", "Docker", "Kubernetes", "PostgreSQL"],
+  tags: ["Go", "Docker", "Kubernetes", "PostgreSQL"],
   icon: Server,
   github: "#",
-  live: "#"
+  live: null
 }, {
   title: "Aider",
   description: "Cross-platform security audit and system inspection tool that automates detection of misconfigurations, weak permissions, and common vulnerability patterns across Linux and macOS environments. Designed to assist blue teams and CTF players with rapid system triage.",
-  tags: ["Go", "GitHub Actions", "Docker", "Trivy"],
+  tags: ["Bash", "Python"],
   icon: Shield,
   github: "https://github.com/Abhizzz123/Aider.git",
   live: null
