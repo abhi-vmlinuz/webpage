@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // CHANGE THIS to your repo name
-const repoName = "abhishek-vincent-cyberops-portfolio";
+const repoName = "webpage";
 
 export default defineConfig(({ mode }) => ({
   base: mode === "production" ? `/${repoName}/` : "/",
