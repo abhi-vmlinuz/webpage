@@ -11,8 +11,8 @@ const contactLinks = [
   },
   {
     label: "GitHub",
-    value: "@Abhizzz123",
-    href: "https://github.com/Abhizzz123",
+    value: "@abhi-vmlinuz",
+    href: "https://github.com/abhi-vmlinuz",
     icon: Github,
   },
   {

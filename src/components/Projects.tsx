@@ -14,14 +14,14 @@ const projects = [{
   description: "Cross-platform security audit and system inspection tool that automates detection of misconfigurations, weak permissions, and common vulnerability patterns across Linux and macOS environments. Designed to assist blue teams and CTF players with rapid system triage.",
   tags: ["Bash", "Python"],
   icon: Shield,
-  github: "https://github.com/Abhizzz123/Aider.git",
+  github: "https://github.com/abhi-vmlinuz/Aider.git",
   live: null
 }, {
   title: "PixelVeil",
   description: "Steganography and forensic analysis toolkit for CTFs and security research. Supports detection and extraction of hidden data from images using LSB techniques, file carving, and entropy-based inspection.",
   tags: ["Python", "Steganography", "Digital Forensics", "CTF", "Binwalk"],
   icon: Image,
-  github: "https://github.com/Abhizzz123/Pixel-Veil",
+  github: "https://github.com/abhi-vmlinuz/Pixel-Veil",
   live: null
 }, {
   title: "PyBackURLs",
