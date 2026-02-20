@@ -4,10 +4,10 @@ import { useRef } from "react";
 import { Bug, ExternalLink, Github, Image, Search, Server, Shield, Terminal, Wrench } from "lucide-react";
 const projects = [{
   title: "Nexus Engine",
-  description: "A high-performance CTF platform built for hosting capture-the-flag competitions. Features dynamic flag generation, real-time scoreboards, and containerized challenge deployment.",
+  description: "An orchestration engine that creates on-demand, isolated container environments. Built for cybersecurity training, it uses Kubernetes to provide a dynamic, 'serverless' backend for per-user workloads.",
   tags: ["Go", "Docker", "Kubernetes", "PostgreSQL"],
   icon: Server,
-  github: "#",
+  github: "https://github.com/abhi-vmlinuz/Nexus-Documentation",
   live: null
 }, {
   title: "Aider",
@@ -28,7 +28,7 @@ const projects = [{
   description: "OSINT automation framework that aggregates historical URLs from Wayback Machine, Common Crawl, and VirusTotal to accelerate reconnaissance and attack-surface discovery workflows.",
   tags: ["Python", "OSINT", "Automation", "Recon", "APIs"],
   icon: Search,
-  github: "#",
+  github: "https://github.com/abhi-vmlinuz/pybackurls",
   live: null
 }];
 const Projects = () => {

@@ -47,12 +47,11 @@ const Hero = () => {
           delay: 0.4
         }} className="space-y-4">
             <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed">
-              <span className="text-destructive font-semibold">Cybersecurity Student</span> with
-              a DevSecOps mindset
+              <span className="text-destructive font-semibold">Platform Engineer</span> building secure cloud infrastructure
             </p>
             <p className="text-sm md:text-base lg:text-lg text-muted-foreground/80 leading-relaxed">
-              Passionate about building robust infrastructure, automating everything,
-              and crafting <span className="text-foreground font-medium">real systems that matter</span>.
+              Building cloud infrastructure and scalable systems that 
+              <span className="text-foreground font-medium"> power real-world applications.</span>
             </p>
           </motion.div>
 

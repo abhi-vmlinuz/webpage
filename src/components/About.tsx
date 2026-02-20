@@ -23,11 +23,10 @@ const About = () => {
           About Me
         </span>
         <h2 className="section-heading">
-          Building Secure Systems
+          Designing Scalable Systems for the Cloud
         </h2>
         <p className="section-subheading mb-16 mx-auto">
-          I thrive at the intersection of security and infrastructure — designing systems
-          that are not just functional, but resilient, scalable, and hardened against real-world threats.
+          My work spans cloud infrastructure, automation, and security-driven system design. I started with offensive security and CTF environments, then moved into building production infrastructure and internal platforms that teams actually rely on.
         </p>
       </motion.div>
 
@@ -74,11 +73,11 @@ const About = () => {
           </div>
           <div className="space-y-2 text-muted-foreground overflow-x-auto">
             <p><span className="text-primary">$</span> whoami</p>
-            <p className="text-foreground pl-4">security-engineer && platform-builder</p>
+            <p className="text-foreground pl-4">infrastructure-engineer && systems-builder</p>
             <p><span className="text-primary">$</span> cat interests.txt</p>
-            <p className="text-foreground pl-4">Cybersecurity, DevSecOps, Cloud Security, Automation</p>
+            <p className="text-foreground pl-4">Cloud, DevOps, Distributed Systems, Automation</p>
             <p><span className="text-primary">$</span> ls -la skills/</p>
-            <p className="text-foreground pl-4">linux/ docker/ kubernetes/ git/ python/</p>
+            <p className="text-foreground pl-4">linux/ docker/ kubernetes/ git/ bash/</p>
             <p><span className="text-primary">$</span> <span className="animate-pulse">_</span></p>
           </div>
         </motion.div>
